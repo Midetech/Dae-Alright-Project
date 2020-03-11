@@ -1,0 +1,113 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    
+  }
+  
+  .modal-main {
+    position:fixed;
+    background: white;
+    width: 486px;
+    height: 721px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+  }
+  
+  .display-block {
+    display: block;
+  }
+  
+  .display-none {
+    display: none;
+  }
+
+  .sign-in-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .cancel {
+    width: 90%;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .close {
+    cursor: pointer;
+  }
+  .welcome2 {
+    margin-bottom: 5%;
+    margin-left: 15%;
+    width: 70%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 38px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.4);
+  }
+  .sign-in_inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .input-sign {
+    padding: 4%;
+    margin: 2%;
+    width: 300px;
+    border: 1px solid lightgrey;
+  }
+  // .input-sign2 {
+  //   padding: 4%;
+  //   margin: 2%;
+  //   width: 300px;
+  //   border: 1px solid lightgrey;
+  //   display: none;
+  // }
+  .login {
+    padding: 4%;
+    margin: 2%;
+    width: 340px;
+    background: #D6DB46;
+    border: none;
+    color: white;
+  }
+  .facebook {
+    padding: 4%;
+    margin: 2%;
+    width: 340px;
+    border: none;
+    background: rgb(85, 85, 197);
+    color: white;
+  }
+  .google {
+    padding: 4%;
+    margin: 2%;
+    width: 340px;
+    border: none;
+    color: white;
+    background: rgb(231, 68, 68);
+  }
+  .forget {
+    margin-top: -1%;
+    text-decoration: none;
+    width: 85%;
+    font-size: 10px;
+    text-align: right;
+    color: grey;
+  }
+  .not-signed {
+    font-size: 11px;
+    color: grey;
+  }
+  .sign-up-link {
+    color: #D6DB46;
+    text-decoration: none;
+
+  }

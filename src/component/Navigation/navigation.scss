@@ -1,0 +1,30 @@
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2% 10%;
+}
+.nav-div {
+  display: flex;
+  flex-direction: row;
+}
+.cart-logo {
+  margin-left: -20%;
+}
+.button {
+  height: 40%;
+  margin-top: 12%;
+  margin-left: 10%;
+  color: #D6DB46;
+  background: white;
+  width: 170px;
+  cursor: pointer;
+  border: 1px solid #D6DB46;
+}
+
+@media screen and (min-width: 320px) and (max-width: 460px) {
+    .navigation {
+      margin: 0%;
+    }
+}

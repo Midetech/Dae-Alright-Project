@@ -1,15 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { Switch, Route } from 'react-router-dom';
+import Navigation from "../src/component/Navigation"
+import { Switch, Route } from "react-router-dom"
+import Signup from "../src/component/signUp"
+import Homepage from './pages/Homepage';
+
+
+
 
 function App() {
   return (
     <div className="App">
-      <img src={logo} alt="dae alright logo"/>
       <Switch>
-<Route  />
+        <Route exact="" path="/" component={Homepage} /> 
+        <Route path="/navigation" component={Navigation} />
+        <Route path="/signup" component={Signup} />
       </Switch>
+     
     </div>
   );
 }
