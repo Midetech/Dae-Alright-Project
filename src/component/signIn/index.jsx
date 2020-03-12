@@ -1,8 +1,7 @@
 import React from "react"
 import "./sign-in.scss"
 import { Link } from "react-router-dom"
-import Navigation from "../Navigation"
-
+import { signInWithGoogle } from "../../firebase/firebase.util"
 class SignIn extends React.Component {
         state = {
             email:'',
@@ -40,7 +39,7 @@ class SignIn extends React.Component {
                         <p className="not-signed">Not Signed In?<Link to='/signup'>Sign Up</Link></p>
 
                         <button className="facebook" type="submit">Sign Up With Facebook</button>
-                        <button className="google" type="submit">Sign Up With Google</button>
+                        <button className="google" type="button" onClick={signInWithGoogle}>Sign Up With Google</button>
                         
                     </form>
 

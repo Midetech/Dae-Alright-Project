@@ -2,6 +2,7 @@
 .navigation {
   display: flex;
   flex-direction: row;
+  padding-top: 1%;
   justify-content: space-between;
   margin: 2% 10%;
 }
@@ -11,6 +12,23 @@
 }
 .cart-logo {
   margin-left: -20%;
+}
+.log-out-div {
+  display: flex;
+  flex-direction: row;
+}
+.log-out {
+  font-size: 12px;
+  margin-top: 2rem;
+  margin-left: 5px;
+
+  cursor: pointer;
+}
+.log-out2 {
+  font-size: 12px;
+  margin-top: 2rem;
+  margin-left: 5px;
+  color: blue;
 }
 .button {
   height: 40%;

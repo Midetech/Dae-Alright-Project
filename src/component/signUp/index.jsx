@@ -1,6 +1,5 @@
 import React from "react"
 import "./signup.scss"
-import Navigation from "../Navigation"
 import { Link } from "react-router-dom"
 
 class Signup extends React.Component {
@@ -22,7 +21,7 @@ render() {
 
     return (
             <div>
-                 <Navigation />
+                
                 <div className={showHideClassName}>
                
                 <div className="modal-main">
@@ -43,7 +42,7 @@ render() {
 
                         <button className="login" type="submit">Login</button>
 
-                        <p className="not-signed">Already Sign Up?<Link to='/navigation'> Sign In</Link></p>
+                        <p className="not-signed">Already Sign Up?<Link to='/'> Sign In</Link></p>
                         
                     </form> 
 
