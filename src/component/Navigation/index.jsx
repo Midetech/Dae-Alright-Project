@@ -5,6 +5,9 @@ import Cart from "../../../src/cart.svg"
 import SignIn from '../signIn'
 import { Link } from "react-router-dom"
 import { auth } from "../../firebase/firebase.util"
+import { connect } from "react-redux"
+
+
 
 class Navigation extends React.Component {
   state = {
@@ -18,7 +21,7 @@ class Navigation extends React.Component {
         this.setState({show: false})
     }
   render() {
-    console.log(this.props.currentUser)
+    
       return (
       <div className="navigation">
         <Link to="/"><img src={logo} alt="Dae alright logo" /></Link>
@@ -40,4 +43,9 @@ class Navigation extends React.Component {
   }
 
 }
-export default Navigation
+
+const mapStateToProps = state => ({
+  currentUser: state.user.currentUser
+})
+
+export default connect(mapStateToProps)(Navigation)

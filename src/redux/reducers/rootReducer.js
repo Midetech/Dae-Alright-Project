@@ -1,9 +1,6 @@
 import { combineReducers } from "redux"
-import restaurantReducer from "./restaurantReducer"
-import userReducer from "./userReducer"
+import  userReducer  from "../reducers/user/userReducer"
 
-
-export default combineReducers ({
-    userReducer,
-    restaurantReducer
-});
+export default combineReducers({
+    user: userReducer
+})
