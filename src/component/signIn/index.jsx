@@ -1,11 +1,25 @@
 import React from "react"
 import "./sign-in.scss"
 import { Link } from "react-router-dom"
-import { signInWithGoogle } from "../../firebase/firebase.util"
+import { auth, signInWithGoogle } from "../../firebase/firebase.util"
 class SignIn extends React.Component {
         state = {
             email:'',
             password: '',
+        }
+        handleSubmit = async event => {
+            event.preventDefault()
+
+            const { email, password} = this.state
+            try {
+                await auth.signInWithEmailAndPassword(email, password)
+            } catch(error) {
+                console.error(error)
+            }
+            this.setState({
+                email: '',
+                password: ''
+            })
         }
         handleChange = (e) => {
             const { name, value} = e.target
@@ -27,7 +41,7 @@ class SignIn extends React.Component {
                     </div>
                     
                     <p className="welcome">Welcome back, Bosun Jones</p>
-                    <form>
+                    <form onClick={this.handleSubmit}>
                         <div className="sign-in_inputs">
                          <input type="email" placeholder="Email" name='email' className='input-sign' value={this.state.email} onChange={this.handleChange} />
                             <input type="password" placeholder="Password" name='password' className='input-sign' value={this.state.password} onChange={this.handleChange} />    

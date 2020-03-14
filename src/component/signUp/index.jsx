@@ -1,11 +1,13 @@
 import React from "react"
 import "./signup.scss"
 import { Link } from "react-router-dom"
-
+import { auth, createUserProfileDocument } from "../../firebase/firebase.util"
 class Signup extends React.Component {
     state = {
+        displayName: '',
         email:'',
         password: '',
+        confirmPassword: '',
         show: true
     }
     showModal = () => {
@@ -14,8 +16,33 @@ class Signup extends React.Component {
     hideModal = () => {
         this.setState({show: false})
     }
+    handleChange = (e) => {
+        const { name, value } = e.target
+        this.setState({[name]: value})
+    }
+    handleSubmit = async event => {
+        event.preventDefault()
+        const { displayName, email, password, confirmPassword } = this.state
+
+        if (password !== confirmPassword) {
+            alert("password don't match")
+            return
+        }
+        try {
+            const { user } = await auth.createUserWithEmailAndPassword(email, password)
+            await createUserProfileDocument(user, { displayName })
+            this.setState({
+                displayName: '',
+                email: '',
+                password: '',
+                confirmPassword: ''
+            })
+        } catch (error) {
+            console.error(error)
+        }
+    }
 render() {
-    const { show } = this.state
+    const { show, displayName, email, password, confirmPassword } = this.state
 
     const showHideClassName = show ? "modal display-block" : 'modal display-none'
 
@@ -31,16 +58,16 @@ render() {
                     </div>
                     
                     <p className="welcome2">Hi, Welcome fill in the input to proceed shopping</p>
-                    <form>
+                    <form onSubmit={this.handleSubmit}>
                         <div className="sign-in_inputs">
-                            <input type="text" placeholder="Full Name" name='fullName' className='input-sign' value={this.state.fullName} onChange={this.handleChange} />  
-                            <input type="email" placeholder="Email" name='email' className='input-sign' value={this.state.email} onChange={this.handleChange} />
-                            <input type="password" placeholder="Password" name='password' className='input-sign' value={this.state.password} onChange={this.handleChange} />    
-                             <input type="password" placeholder="Confirm Password" name='confirmPassword' className='input-sign' value={this.state.confirmPassword} onChange={this.handleChange} />
+                            <input type="text" placeholder="display Name" name='displayName' className='input-sign' value={displayName} onChange={this.handleChange} />  
+                            <input type="email" placeholder="Email" name='email' className='input-sign' value={email} onChange={this.handleChange} />
+                            <input type="password" placeholder="Password" name='password' className='input-sign' value={password} onChange={this.handleChange} />    
+                            <input type="password" placeholder="Confirm Password" name='confirmPassword' className='input-sign' value={confirmPassword} onChange={this.handleChange} />
                          </div>
                         
 
-                        <button className="login" type="submit">Login</button>
+                        <button className="login" type="submit">Sign Up</button>
 
                         <p className="not-signed">Already Sign Up?<Link to='/'> Sign In</Link></p>
                         
