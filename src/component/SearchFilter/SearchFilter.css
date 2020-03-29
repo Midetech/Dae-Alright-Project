@@ -1,0 +1,41 @@
+.divhead{
+    position:absolute;
+    width: 406px;
+    height: 50px;
+    background: #D6DB46;
+}
+
+.maindiv{
+    position: relative;
+    margin-left:100.5px;
+    top:200px;
+    height: 500px;
+    border:1px solid rgba(0, 0, 0, 0.2);
+    width:406px;
+    left:102px;
+}
+
+.texta{
+    position: relative;
+    color: #FFFFFF;
+    left:-120px;
+    bottom: 10px;
+}
+
+
+.inputfood{
+position: relative;
+width: 350px;
+height: 38px;
+top: 70px;
+border: 1px solid rgba(0, 0, 0, 0.2);
+box-sizing: border-box;
+}
+
+.first-radio{
+position: relative;
+top:80px;
+width: 12px;
+height: 12px;
+left: -150px;
+}

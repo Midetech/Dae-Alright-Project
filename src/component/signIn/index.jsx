@@ -46,7 +46,7 @@ class SignIn extends React.Component {
                          <input type="email" placeholder="Email" name='email' className='input-sign' value={this.state.email} onChange={this.handleChange} />
                             <input type="password" placeholder="Password" name='password' className='input-sign' value={this.state.password} onChange={this.handleChange} />    
                         </div>
-                        <a className="forget" href=""><p className="forget">Forgot Password ?</p></a>
+                        <a className="forget" href="signUp"><p className="forget">Forgot Password ?</p></a>
 
                         <button className="login" type="submit">Login</button>
 
