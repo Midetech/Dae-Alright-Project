@@ -1,0 +1,94 @@
+.subscription {
+    background-color: #D6DB46;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+   width: 100%
+}
+.subscription-header {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.subscription-paragraph {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.subscription-input {
+    display: flex;
+    flex-direction: row;
+}
+.subscription-button {
+    width: 174px;
+    height: 55px;
+    margin-top: 1.2%;
+    background: #ffffff;
+    border: none;
+    color: #D6DB46;
+}
+.input {
+    display: flex;
+    background: transparent;
+    border: 1px solid white;
+    
+}
+.sub-input {
+    width: 200px;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid white;
+    margin: 5px;
+}
+.sub-input::placeholder {
+    color: white;
+}
+.sub-button {
+    width: 200px;
+    padding: 10px;
+    background: white;
+    border: 1px solid white;
+    margin: 5px;
+    color: #D6DB46;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 460px){
+    .subscription {
+        display: flex;
+        flex-direction: column;
+        margin-top: -20rem;
+    }
+    .subscription-input {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 760px) and (max-width: 1024px) {
+    .subscription {
+        display: flex;
+        flex-direction: column;
+        margin-top: -20rem;
+    }
+    .subscription-input {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

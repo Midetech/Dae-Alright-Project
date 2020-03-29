@@ -1,4 +1,12 @@
 
+.header-div {
+    display: flex;
+    flex-direction: row;
+}
+.header-image {
+    width: 250px;
+    margin-top: 10rem;
+}
 .header {
     margin-left: 3%;
 }
@@ -23,7 +31,7 @@
     margin-left: 10%;
     line-height: 49px;
     text-align: start;
-    margin-top: -3%;
+    margin-top: -1%;
 }
 b {
     color: #D6DB46;;
@@ -72,4 +80,14 @@ b {
         margin-left: -4%;
 
     }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1024px) {
+    .header-text {
+        width: 50%;
+    }
+    .header-paragraph {
+        width: 80%;
+    }
+    
 }

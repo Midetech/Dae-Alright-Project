@@ -1,0 +1,144 @@
+
+.food-list {
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.foodlist-header {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.foodlist-paragraph {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: -0.5%;
+    color: rgba(0, 0, 0, 0.4);
+}
+.food-images {
+    width: 330px;
+    height: 200px;
+}
+.food-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-gap: 45px;
+}
+.food-sub-div {
+    border: 1px solid black;
+    
+}
+.food-name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    margin-left: 2%;
+    display: flex;
+    justify-content: flex-start;
+    color: rgba(0, 0, 0, 0.6);
+}
+.food-item {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-start;
+    line-height: 14px;
+    color: rgba(0, 0, 0, 0.4);
+    margin-left: 2%;
+}
+.food-sub-div2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 2%;
+    margin-right: 5%;
+}
+.food-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5%;
+    align-items: center;
+    width: 100%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 460px) {
+    .food-list {
+        margin-top: 45rem;
+        width: 95%;
+        margin-left: 2%;
+        margin-right: 5%;
+    }
+    .food-div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+       
+    }
+    .food-images {
+        width: 100%;
+    }
+    .food-sub-div {
+        width: 100%;
+    }
+    .food-name {
+        font-size: 12px;
+    }
+    .food-item {
+        font-size: 10px;
+    }
+    .food-amount {
+        font-size: 10px;
+    }
+    .food-delivery {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 720px) and (max-width: 1024px) {
+    .food-list {
+        margin-top: 18rem;
+        width: 95%;
+        margin-left: 2%;
+        margin-right: 5%;
+    }
+    .food-div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 15px;
+       
+    }
+    .food-images {
+        width: 100%;
+    }
+    .food-sub-div {
+        width: 100%;
+    }
+    .food-name {
+        font-size: 12px;
+    }
+    .food-item {
+        font-size: 10px;
+    }
+    .food-amount {
+        font-size: 10px;
+    }
+    .food-delivery {
+        font-size: 10px;
+    }
+}
+
+
+
