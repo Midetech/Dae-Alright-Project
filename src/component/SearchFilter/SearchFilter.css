@@ -1,41 +1,70 @@
 .divhead{
-    position:absolute;
-    width: 406px;
+    position: relative;;
+    width: 348px;
     height: 50px;
     background: #D6DB46;
 }
 
 .maindiv{
     position: relative;
-    margin-left:100.5px;
-    top:200px;
-    height: 500px;
+    margin-left:65px;
+    top:50px;
+    height: auto;
     border:1px solid rgba(0, 0, 0, 0.2);
-    width:406px;
+    width:350px;
     left:102px;
 }
 
 .texta{
     position: relative;
     color: #FFFFFF;
-    left:-120px;
-    bottom: 10px;
+    left:20px;
+    bottom: -5px;
+    font-size:25px
 }
 
 
 .inputfood{
-position: relative;
-width: 350px;
+margin-left: 30px;
+font-size: 15px;
+width: 280px;
 height: 38px;
-top: 70px;
+top: 25px;
 border: 1px solid rgba(0, 0, 0, 0.2);
 box-sizing: border-box;
+text-align: left;
 }
 
-.first-radio{
-position: relative;
-top:80px;
-width: 12px;
-height: 12px;
-left: -150px;
+input[type=radio]{
+    transform: scale(1.2);
+
+}
+
+label{
+    padding-bottom: 20px;
+    font-size:17px;
+}
+
+.radio-buttons{
+border-bottom: solid 1px;
+}
+
+
+.foodfor{
+    border-bottom:solid 1px  rgba(207, 205, 205, 0.637)
+}
+
+.foodfor h5{
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+
+.tagshead h5{
+margin-left: 20px;
+padding-top: 15px;
+}
+.minimum h5{
+margin-left: 20px;
+padding-top: 15px;
 }
