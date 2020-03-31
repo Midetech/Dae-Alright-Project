@@ -13,8 +13,16 @@
 }
 .search-select {
     padding: 12px;
-    width: 200px;
-    margin-right: 10px;
+    width: 250px;
+    margin: 10px;
+    background: transparent;
+    color: white;
+    border:1px solid white;
+}
+.search-select2 {
+    padding: 12px;
+    width: 250px;
+    margin: 10px;
     background: transparent;
     color: white;
     border:1px solid white;
@@ -24,7 +32,8 @@ option {
 }
 .search-button {
     padding: 12px;
-    width: 150px;
+    width: 200px;
+    margin-right: 5%;
     background: white;
     color: #D6DB46;
     border: none;
@@ -41,6 +50,10 @@ option {
         border-radius: 5px;
     }
     .search-select {
+        margin-bottom: 3%;
+    }
+    .search-select2 {
+        margin-top: -7%;
         margin-bottom: 3%;
     }
 }
