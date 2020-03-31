@@ -10,10 +10,17 @@
     "bootstrap": "^4.4.1",
     "firebase": "^7.8.2",
     "node-sass": "^4.13.1",
+<<<<<<< HEAD
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.0",
     "react-dom": "^16.13.1",
     "react-icons": "^3.9.0",
+=======
+    "react": "^16.12.0",
+    "react-bootstrap": "^1.0.0-beta.16",
+    "react-dom": "^16.12.0",
+    "react-hook": "0.0.1",
+>>>>>>> f9e757b5f279b72c6dcc984e3ea73bf31663feee
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0",
